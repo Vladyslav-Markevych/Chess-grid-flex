@@ -15,7 +15,7 @@ p {
     ". letters-up ."
     "numbers-left chess numbers-right"
     ". letters-down .";
-
+  aspect-ratio: 1 / 1;
   &__numbers-left {
     grid-area: numbers-left;
     display: flex;
@@ -36,8 +36,8 @@ p {
   &__chess {
     grid-area: chess;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     border: 1px solid;
 
     &-black {
